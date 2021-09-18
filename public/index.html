@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcial 2</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- nav bar-->
+    <nav class="navbar">
+        <img src="img/logo.png" class="logo" alt="" />
+        <div class="join-box">
+            <button class="btn"> <a href="./index.html" class="b">Inicio</a></button>
+            <button class="btn"> <a href="./tv.html" class="b">Series TV</a></button>
+            <button class="btn"> <a href="./cine.html" class="b">Peliculas en cine</a></button>
+            <p class="join-msg">Ilimitado TV shows & Pelis</p>
+            <button class="btn join-btn">Suscribase hoy</button>
+            <button class="btn">Ingresar</button>
+        </div>
+    </nav>
+
+    <!-- SEccion principal-->
+    <header class="main">
+        <h1 class="heading">Menú de Inicio</h1>
+
+        <div class="contentFilter">
+
+            <!-- Listado de genero -->
+
+            <label class="label" for="pelis">Peliculas: </label>
+            <select class="inputGenero" id="inputGenero">
+            
+            </select>
+            <label class="label" for="clasi">Clasificación: </label>
+            <select class="inputs" id="clasi">
+                <option value="0" disabled selected>Seleccionar</option>
+            </select>
+            <label class="label" for="anio">Año de estreno:</label>
+            <input class="in" type="text" id="anio" maxlength="4" value="">
+            <label class="label" for="adult">Peliculas para adultos mejor calificadas: </label>
+            <input type="radio" id="adult" name="adultMejorCalificada" value="37">
+
+
+        </div>
+        <button class="boton-personalizado-4" onclick="Filtros()">Filtrar</button>
+        <hr>
+        <div class="mainHome"></div>
+    </header>
+
+    <!-- se hacen la referncia a los JS en este orden -->
+    <script src="./js/api.js "></script>
+    <script src="./js/home.js "></script>
+    <script src="./js/scroll.js "></script>
+</body>
+
+</html>
